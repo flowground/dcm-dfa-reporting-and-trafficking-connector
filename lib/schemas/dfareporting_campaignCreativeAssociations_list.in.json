@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "campaignId": {
+            "required": true,
+            "type": "string"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "quotaUser": {
+            "type": "string"
+        },
+        "userIp": {
+            "type": "string"
+        }
+    }
+}

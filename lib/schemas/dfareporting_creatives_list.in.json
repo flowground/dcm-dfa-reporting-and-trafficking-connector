@@ -1,0 +1,115 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "active": {
+            "type": "boolean"
+        },
+        "advertiserId": {
+            "type": "string"
+        },
+        "archived": {
+            "type": "boolean"
+        },
+        "campaignId": {
+            "type": "string"
+        },
+        "companionCreativeIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "creativeFieldIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "renderingIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "searchString": {
+            "type": "string"
+        },
+        "sizeIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "sortField": {
+            "default": "ID",
+            "enum": [
+                "ID",
+                "NAME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "studioCreativeId": {
+            "type": "string"
+        },
+        "types": {
+            "items": {
+                "enum": [
+                    "BRAND_SAFE_DEFAULT_INSTREAM_VIDEO",
+                    "CUSTOM_DISPLAY",
+                    "CUSTOM_DISPLAY_INTERSTITIAL",
+                    "DISPLAY",
+                    "DISPLAY_IMAGE_GALLERY",
+                    "DISPLAY_REDIRECT",
+                    "FLASH_INPAGE",
+                    "HTML5_BANNER",
+                    "IMAGE",
+                    "INSTREAM_AUDIO",
+                    "INSTREAM_VIDEO",
+                    "INSTREAM_VIDEO_REDIRECT",
+                    "INTERNAL_REDIRECT",
+                    "INTERSTITIAL_INTERNAL_REDIRECT",
+                    "RICH_MEDIA_DISPLAY_BANNER",
+                    "RICH_MEDIA_DISPLAY_EXPANDING",
+                    "RICH_MEDIA_DISPLAY_INTERSTITIAL",
+                    "RICH_MEDIA_DISPLAY_MULTI_FLOATING_INTERSTITIAL",
+                    "RICH_MEDIA_IM_EXPAND",
+                    "RICH_MEDIA_INPAGE_FLOATING",
+                    "RICH_MEDIA_MOBILE_IN_APP",
+                    "RICH_MEDIA_PEEL_DOWN",
+                    "TRACKING_TEXT",
+                    "VPAID_LINEAR_VIDEO",
+                    "VPAID_NON_LINEAR_VIDEO"
+                ],
+                "type": "string"
+            },
+            "type": "array"
+        }
+    }
+}

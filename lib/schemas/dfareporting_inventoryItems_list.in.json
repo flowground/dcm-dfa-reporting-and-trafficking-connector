@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "projectId": {
+            "required": true,
+            "type": "string"
+        },
+        "ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "inPlan": {
+            "type": "boolean"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "orderId": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "siteId": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "sortField": {
+            "default": "ID",
+            "enum": [
+                "ID",
+                "NAME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "type": {
+            "enum": [
+                "PLANNING_PLACEMENT_TYPE_CREDIT",
+                "PLANNING_PLACEMENT_TYPE_REGULAR"
+            ],
+            "type": "string"
+        }
+    }
+}

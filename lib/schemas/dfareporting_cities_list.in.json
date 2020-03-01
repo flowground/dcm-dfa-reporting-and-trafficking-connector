@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "countryDartIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "dartIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "namePrefix": {
+            "type": "string"
+        },
+        "regionDartIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "quotaUser": {
+            "type": "string"
+        },
+        "userIp": {
+            "type": "string"
+        }
+    }
+}

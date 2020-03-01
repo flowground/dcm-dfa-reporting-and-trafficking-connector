@@ -1,0 +1,60 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "adId": {
+            "type": "string"
+        },
+        "advertiserId": {
+            "type": "string"
+        },
+        "campaignId": {
+            "type": "string"
+        },
+        "definitionsOnly": {
+            "type": "boolean"
+        },
+        "enabled": {
+            "type": "boolean"
+        },
+        "eventTagTypes": {
+            "items": {
+                "enum": [
+                    "CLICK_THROUGH_EVENT_TAG",
+                    "IMPRESSION_IMAGE_EVENT_TAG",
+                    "IMPRESSION_JAVASCRIPT_EVENT_TAG"
+                ],
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "searchString": {
+            "type": "string"
+        },
+        "sortField": {
+            "default": "ID",
+            "enum": [
+                "ID",
+                "NAME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        }
+    }
+}

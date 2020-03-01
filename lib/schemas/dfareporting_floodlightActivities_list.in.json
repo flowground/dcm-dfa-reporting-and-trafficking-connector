@@ -1,0 +1,71 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "advertiserId": {
+            "type": "string"
+        },
+        "floodlightActivityGroupIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "floodlightActivityGroupName": {
+            "type": "string"
+        },
+        "floodlightActivityGroupTagString": {
+            "type": "string"
+        },
+        "floodlightActivityGroupType": {
+            "enum": [
+                "COUNTER",
+                "SALE"
+            ],
+            "type": "string"
+        },
+        "floodlightConfigurationId": {
+            "type": "string"
+        },
+        "ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "searchString": {
+            "type": "string"
+        },
+        "sortField": {
+            "default": "ID",
+            "enum": [
+                "ID",
+                "NAME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "tagString": {
+            "type": "string"
+        }
+    }
+}

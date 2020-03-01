@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "advertiserIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "archived": {
+            "type": "boolean"
+        },
+        "campaignIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "searchString": {
+            "type": "string"
+        },
+        "sortField": {
+            "default": "ID",
+            "enum": [
+                "ID",
+                "NAME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "subaccountId": {
+            "type": "string"
+        }
+    }
+}

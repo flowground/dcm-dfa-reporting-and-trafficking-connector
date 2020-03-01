@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "directories": {
+            "items": {
+                "enum": [
+                    "APPLE_APP_STORE",
+                    "GOOGLE_PLAY_STORE",
+                    "UNKNOWN"
+                ],
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "searchString": {
+            "type": "string"
+        },
+        "userIp": {
+            "type": "string"
+        }
+    }
+}

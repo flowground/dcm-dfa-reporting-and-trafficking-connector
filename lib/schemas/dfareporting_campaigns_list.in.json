@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "advertiserGroupIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "advertiserIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "archived": {
+            "type": "boolean"
+        },
+        "atLeastOneOptimizationActivity": {
+            "type": "boolean"
+        },
+        "excludedIds": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "overriddenEventTagId": {
+            "type": "string"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "searchString": {
+            "type": "string"
+        },
+        "sortField": {
+            "default": "ID",
+            "enum": [
+                "ID",
+                "NAME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "subaccountId": {
+            "type": "string"
+        }
+    }
+}

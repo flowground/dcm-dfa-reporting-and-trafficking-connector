@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "maxResults": {
+            "default": 10,
+            "maximum": 10,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "scope": {
+            "default": "MINE",
+            "enum": [
+                "ALL",
+                "MINE",
+                "SHARED_WITH_ME"
+            ],
+            "type": "string"
+        },
+        "sortField": {
+            "default": "LAST_MODIFIED_TIME",
+            "enum": [
+                "ID",
+                "LAST_MODIFIED_TIME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "DESCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "userIp": {
+            "type": "string"
+        }
+    }
+}

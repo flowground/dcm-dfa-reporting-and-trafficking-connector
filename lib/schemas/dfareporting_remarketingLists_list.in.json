@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "properties": {
+        "profileId": {
+            "required": true,
+            "type": "string"
+        },
+        "advertiserId": {
+            "required": true,
+            "type": "string"
+        },
+        "active": {
+            "type": "boolean"
+        },
+        "floodlightActivityId": {
+            "type": "string"
+        },
+        "maxResults": {
+            "default": 1000,
+            "maximum": 1000,
+            "minimum": 0,
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "pageToken": {
+            "type": "string"
+        },
+        "sortField": {
+            "default": "ID",
+            "enum": [
+                "ID",
+                "NAME"
+            ],
+            "type": "string"
+        },
+        "sortOrder": {
+            "default": "ASCENDING",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        }
+    }
+}
